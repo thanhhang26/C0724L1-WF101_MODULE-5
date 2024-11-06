@@ -27,15 +27,15 @@ let courses = [
 ];
 
 // yeu cau 1: Lọc các bài đăng có rating >= 4
-const highRatedCourses = courses.filter(course => course.rating >= 4);
+const highCourses = courses.filter(course => course.rating >= 4);
 
 // Xuất ra danh sách các bài đăng thỏa mãn điều kiện
-highRatedCourses.forEach(course => console.log(course.title));
+highCourses.forEach(course => console.log(course.title));
 
 // yeu cau 2: Lọc các bài đăng có rating < 4
-const highRatedCourses2 = courses.filter(course => course.rating < 4);
-highRatedCourses2.forEach(course => `${course.id} - ${course.title} - ${course.rating}`);
-console.log(highRatedCourses2);
+const highCourses2 = courses.filter(course => course.rating < 4);
+highCourses2.forEach(course => `${course.id} - ${course.title} - ${course.rating}`);
+console.log(highCourses2);
 
 // yeu cau 3: Sử dụng cú pháp ES6 đã học viết hàm trả về một mảng mới gộp 2 mảng courses và addedCourses
 let addedCourses = [ 
@@ -55,7 +55,7 @@ let addedCourses = [
       rating: 3.8, 
     } 
   ];
-  const highRatedCourses3 = [...courses,...addedCourses];
-  console.log(highRatedCourses3);
+  const highCourses3 = [...courses,...addedCourses];
+  console.log(highCourses3);
 	
 
