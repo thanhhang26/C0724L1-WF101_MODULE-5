@@ -11,7 +11,7 @@ function isPrime(num) {
 }
 
 const filterPrimes = array => {
-    return array.filter(isPrime);// Sử dụng filter để lọc các số nguyên tố
+    return array.filter(isPrime);
 }
  
 
