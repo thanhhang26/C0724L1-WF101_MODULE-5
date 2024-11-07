@@ -10,9 +10,11 @@ function isPrime(num) {
     return true; // Nếu không chia hết, là số nguyên tố
 }
 
-function filterPrimes(array){
-    return array.filter(isPrime); // Sử dụng filter để lọc các số nguyên tố
+const filterPrimes = array => {
+    return array.filter(isPrime);// Sử dụng filter để lọc các số nguyên tố
 }
+ 
+
 // Khai báo mảng để kiểm tra
 const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]; // Bạn có thể thay đổi các giá trị trong mảng này
 const primeNumbers = filterPrimes(array)
